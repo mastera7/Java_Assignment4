@@ -1,7 +1,9 @@
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.Queue;
 
-public class BreadthFirstSearch<T> extends Search<T> {
+class BreadthFirstSearch<T> extends Search<T> {
 
     public BreadthFirstSearch(WeightedGraph<T> tWeightedG, T gSource) {
         super(new VerPoint<T>(gSource));
@@ -26,4 +28,3 @@ public class BreadthFirstSearch<T> extends Search<T> {
         }
     }
 }
-

@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+
+
 public class VerPoint<V>{
     private V giv;
     private Map<VerPoint<V>, Double> hashMap = new HashMap<>();
@@ -19,3 +22,4 @@ public class VerPoint<V>{
         return giv;
     }
 }
+

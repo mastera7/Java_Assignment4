@@ -12,19 +12,19 @@ public class Main {
         graph.addEdge("Astana", "Kostanay", 3.5);
         graph.addEdge("Shymkent", "Kyzylorda", 5.4);
 
-        System.out.println("Dijkstra:");
-        Search<String> djk = new DijkstraSearch<>(graph, "Almaty");
-        outputPath(djk, "Kyzylorda");
+        //       System.out.println("Dijkstra:");
+        //       Searching<String> djk = new DijkstraSearch<>(graph, "Almaty");
+        //       outputPath(djk, "Kyzylorda");
 
-      System.out.println("DFS:");
-      Search<String> dfs = new DepthFirstSearch<>(graph, "Almaty");
-        outputPath(dfs, "Kyzylorda");
-
-      System.out.println("\n--------------------------------");
-
-       System.out.println("BFS:");
-       Search<String> bfs = new BreadthFirstSearch<>(graph, "Almaty");
-        outputPath(bfs, "Kyzylorda");
+//        System.out.println("DFS:");
+//        Search<String> dfs = new DepthFirstSearch<>(graph, "Almaty");
+//        outputPath(dfs, "Kyzylorda");
+//
+//        System.out.println("\n--------------------------------");
+//
+//        System.out.println("BFS:");
+//        Search<String> bfs = new BreadthFirstSearch<>(graph, "Almaty");
+//        outputPath(bfs, "Kyzylorda");
     }
 
     public static void outputPath(Search<String> search, String key) {
@@ -32,7 +32,4 @@ public class Main {
             System.out.print(v + " -> ");
         }
     }
-
-
 }
-
